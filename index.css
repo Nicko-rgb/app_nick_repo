@@ -44,10 +44,7 @@ header .fecha {
 main {
     display: flex;
     flex: 1;
-}
-
-section {
-    padding-top: 70px;
+    padding: 60px 0;
 }
 
 .section1 {
@@ -228,4 +225,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 }
