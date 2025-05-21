@@ -4,63 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/escudo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Mi App</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Portal Empleos Perú</title>
 </head>
 
 <body>
-    <main>
-        <section class="section1">
-            <h2 class="txt">Practica 2</h2>
-            <div>
-                <h2 class="ciclo">V Ciclo</h2>
-                <h4 class="carrera">Desarrollo de Sistemas de Información</h4>
+    <header>
+        <div class="left">
+            <img src="./assets/escudo.png" alt="">
+            <p>gob.pe</p>
+            <span style="margin-top: -4px; margin-left: 3px;" class="line"></span>
+            <a href="" style="margin-top: -6px;" >Ministerio de Trabajo y Promoción del Empleo</a>
+        </div>
+        <div class="right">
+            <button class="btn-h">Nosotros <img src="./assets/flecha.png" alt=""> </button>
+            <span class="line"></span>
+            <button class="btn-h">Ingresa como empresa</button>
+            <span class="line"></span>
+            <button class="btn-h">Crear cuenta</button>
+            <button>Ingresar</button>
+        </div>
+        <div class="icons">
+            <img src="./assets/sound.png" alt="">
+            <img src="./assets/no_sound.png" alt="">
+            <img src="./assets/aaaa.png" alt="">
+            <img src="./assets/aaaa.png" alt="">
+            <img src="./assets/teme.png" alt="">
+        </div>
+    </header>
+    <section class="home">
+        <aside>
+            <div class="ee">
+                <h1>Empleos Perú</h1>
+                <div class="icons1">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
             </div>
-            <img src="./dsi_logo.png" alt="">
-        </section>
-        <section class="section2">
-            <div>
-                <aside class="parrafo">
-                    <h2>Mi Parrafo</h2>
-                    <p>
-                        Bienvenido a nuestro sitio web. Nos dedicamos a ofrecer servicios y
-                        productos de alta calidad, pensados para satisfacer las necesidades
-                        de nuestros clientes. Nuestro compromiso es brindarte una experiencia
-                        única, con atención personalizada, innovación constante y soluciones
-                        que marcan la diferencia. Explora nuestro contenido y descubre todo
-                        lo que podemos ofrecerte. ¡Gracias por visitarnos!
-                    </p>
-                    <br>
-                    <p>
-                        Bienvenido a nuestro sitio web. Nos dedicamos a ofrecer servicios y
-                        productos de alta calidad, pensados para satisfacer las necesidades
-                        de nuestros clientes. Nuestro compromiso es brindarte una experiencia
-                        única, con atención personalizada, innovación constante y soluciones
-                        que marcan la diferencia. Explora nuestro contenido y descubre todo
-                        lo que podemos ofrecerte. ¡Gracias por visitarnos!
-                    </p>
-                </aside>
-                <aside class="imgs">
-                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="">
-                    <div class="card">
-                        <img src="./yoo_wsp.jpg" alt="">
-                        <p>Hola 👋, I am Nixon soy estudiante de Desarrollo de Software. Me dedico a crear aplicaciones
-                            web y resolver problemas con tecnología. Me apasiona aprender nuevas herramientas y mejorar
-                            cada día como programador.</p>
-                        <div class="icons">
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                    </div>
-                </aside>
+            <div class="btns1">
+                <button>Bolsa de Trabajo</button>
+                <button>Certificado Único Laboral</button>
+                <button>Capacítate</button>
             </div>
-            <h2 class="nombre">Nixon Mancilla Leon</h2>
-        </section>
-    </main>
+        </aside>
+        <div class="img-h">
+            <img src="./assets/fondo1.png" alt="">
+            <div class="center">
+                <h1>¡Encuentra tu <br> próximo empleo!</h1>
+                <span>Miles de vancantes disponibles</span>
+                <div class="btn-img">
+                    <button>Ver vacantes</button>
+                    <button>Servicios para empresas</button>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div>
+                <div>
+                    <input type="text" placeholder="Buscar empleo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                    <input type="text" placeholder="Dónde">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <button>Buscar</button>
+            </div>
+            <p>Explora las ofertas laborales que tenemos para ti</p>
+        </form>
+    </section>
+
+    <section class="main">
+        <h2>Más Servicios</h2>
+        <div class="servicios">
+            <article>
+                <img src="https://www.empleosperu.gob.pe/portal-mtpe/assets/images/banner/CUL.png" alt="">
+                <h4>Solicita tu Certificado Único Laboral</h4>
+                <p>Obtén gratis tu certificado con toda la información que necesitas para postular a un empleo.</p>
+                <button>
+                    Obtener Certificado
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article>
+                <img src="https://www.empleosperu.gob.pe/portal-mtpe/assets/images/banner/capacitacion.png" alt="">
+                <h4>CAPACITA-T</h4>
+                <p>Preparándote para tu proximo empleo. Mejora tu empleabilidad, de forma gratiuta, capacitándote en
+                    cursos con alta demanda laboral. </p>
+                <button>
+                    Ver capacitaciones
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article>
+                <img src="https://www.empleosperu.gob.pe/portal-mtpe/assets/images/banner/carrera.jpg" alt="">
+                <h4>Plataforma Mi Carrera</h4>
+                <p>Accede a información sobre las carreras mejor pagadas y más solicitadas en el mercado laboral.
+                    Además, conoce las opciones de financiamiento de estudios superiores.</p>
+                <button>
+                    Más información
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+        </div>
+        <h2>Ofertas laborales</h2>
+        <div class="ofertas">
+            <div class="card">
+                <strong>DIGITAL MAX S.A.C.</strong>
+                <p class="cargo"><a href="#">EJECUTIVO COMERCIAL MOVISTAR</a></p>
+                <p class="ubicacion"><i class="fa-solid fa-location-dot"></i>AYACUCHO HUAMANGA AYACUCHO</p>
+                <div>
+                    <p class="fecha">2025-05-17</p>
+                    <a href="#" class="ver-oferta">Ver Oferta</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <strong>GRUPO HIMALAYA S.A.C.</strong>
+                <p class="cargo"><a href="#">OPERARIO DE LAVADO VEHICULAR</a></p>
+                <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> LIMA LIMA COMAS</p>
+                <div>
+                    <p class="fecha">2025-05-16</p>
+                    <a href="#" class="ver-oferta">Ver Oferta</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <strong>MC LAREN S.A.C.</strong>
+                <p class="cargo"><a href="#">Lavador de Autos</a></p>
+                <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> LIMA LIMA MIRAFLORES</p>
+                <div>
+                    <p class="fecha">2025-05-16</p>
+                    <a href="#" class="ver-oferta">Ver Oferta</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <strong>ATENCION INTEGRAL SALUD UTES OXAPAMPA</strong>
+                <p class="cargo"><a href="#">DIGITADOR</a></p>
+                <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> PASCO OXAPAMPA PUERTO BERMUDEZ</p>
+                <div>
+                    <p class="fecha">2025-05-16</p>
+                    <a href="#" class="ver-oferta">Ver Oferta</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <strong>ATENCION INTEGRAL SALUD UTES OXAPAMPA</strong>
+                <p class='cargo'><a href="#">MEDICO ESPECIALISTA EN GINECO- OBSTETRA</a></p>
+                <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> PASCO OXAPAMPA OXAPAMPA</p>
+                <div>
+                    <p class="fecha">2025-05-16</p>
+                    <a href="#" class="ver-oferta">Ver Oferta</a>
+                </div>
+            </div>
+
+            <div style="height: 100px;" class="card">
+                <strong>TECNICO EN ENFERMERÍA</strong>
+                <div style="margin-top: -10px;">
+                    <p class="fecha">2025-05-16</p>
+                    <a href="#" class="ver-oferta">Ver Oferta</a>
+                </div>
+            </div>
+            <div class="ver-todas">
+                <a href="#">Ver todas las ofertas →</a>
+            </div>
+        </div>
+        <div class="videos">
+            <p>Ingresa como <a href="Consultor de empleo">Consultor de empleo</a> </p>
+            <h3>Tutoriales</h3>
+            <div>
+                <iframe src="https://youtube.com/embed/lLYdsPB_4nM" frameborder="0" allowfullscreen ></iframe>
+                <iframe src="https://youtube.com/embed/kxd-kSwi1SE" frameborder="0" allowfullscreen ></iframe>
+            </div>
+            <img class="pie-nav" src="./assets/pie.png" alt="">
+        </div>
+    </section>
     <footer>
-        &#169 Copiright - 2025
+        <img src="./assets/footer.png" alt="">
     </footer>
 </body>
 
