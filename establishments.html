@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Establecimientos - SportBooking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-dumbbell"></i>
+                <span>SportBooking</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="establishments.html" class="nav-link active">Establecimientos</a></li>
+                <li><a href="#about" class="nav-link">Acerca de</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Establecimientos Deportivos</h1>
+            <p>Encuentra el espacio perfecto para tu actividad deportiva</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="sport-filter">Deporte:</label>
+                    <select id="sport-filter">
+                        <option value="">Todos</option>
+                        <option value="futbol">Fútbol</option>
+                        <option value="basquet">Básquet</option>
+                        <option value="tenis">Tenis</option>
+                        <option value="voleibol">Voleibol</option>
+                        <option value="gimnasio">Gimnasio</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating-filter">Calificación mínima:</label>
+                    <select id="rating-filter">
+                        <option value="">Cualquiera</option>
+                        <option value="4">4+ estrellas</option>
+                        <option value="3">3+ estrellas</option>
+                        <option value="2">2+ estrellas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Precio máximo:</label>
+                    <select id="price-filter">
+                        <option value="">Cualquiera</option>
+                        <option value="50">Hasta $50</option>
+                        <option value="100">Hasta $100</option>
+                        <option value="150">Hasta $150</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Establishments Grid -->
+    <section class="establishments">
+        <div class="container">
+            <div class="establishments-grid" id="establishments-grid">
+                <!-- Establishment 1 -->
+                <div class="establishment-card" data-sport="futbol" data-rating="4.8" data-price="80">
+                    <div class="establishment-image">
+                        <img src="https://static.wixstatic.com/media/5b1641_bb6a79703c8343b68b232e27669c1e41~mv2.jpg/v1/fill/w_560,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5b1641_bb6a79703c8343b68b232e27669c1e41~mv2.jpg" alt="">
+                        <div class="establishment-badge">Premium</div>
+                    </div>
+                    <div class="establishment-info">
+                        <h3>Centro Deportivo El Campeón</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-value">4.8</span>
+                            <span class="reviews">(124 reseñas)</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature"><i class="fas fa-futbol"></i> Fútbol 11</span>
+                            <span class="feature"><i class="fas fa-futbol"></i> Fútbol 7</span>
+                            <span class="feature"><i class="fas fa-parking"></i> Estacionamiento</span>
+                        </div>
+                        <div class="amenities">
+                            <span class="amenity"><i class="fas fa-shower"></i> Duchas</span>
+                            <span class="amenity"><i class="fas fa-wifi"></i> WiFi</span>
+                            <span class="amenity"><i class="fas fa-coffee"></i> Cafetería</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">$80/hora</span>
+                            <button class="btn btn-primary reserve-btn" onclick="openReservation('Centro Deportivo El Campeón')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Establishment 2 -->
+                <div class="establishment-card" data-sport="basquet" data-rating="4.5" data-price="60">
+                    <div class="establishment-image">
+                        <img src="https://bolognesinoticias.com/wp-content/uploads/2017/10/losa-deportiva-con-grass-sintetico-Conchucos..jpg" alt="">
+                    </div>
+                    <div class="establishment-info">
+                        <h3>Gimnasio Basketball Pro</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.5</span>
+                            <span class="reviews">(89 reseñas)</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature"><i class="fas fa-basketball-ball"></i> Cancha profesional</span>
+                            <span class="feature"><i class="fas fa-users"></i> Hasta 10 personas</span>
+                            <span class="feature"><i class="fas fa-air-freshener"></i> Aire acondicionado</span>
+                        </div>
+                        <div class="amenities">
+                            <span class="amenity"><i class="fas fa-shower"></i> Duchas</span>
+                            <span class="amenity"><i class="fas fa-lock"></i> Casilleros</span>
+                            <span class="amenity"><i class="fas fa-water"></i> Agua gratis</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">$60/hora</span>
+                            <button class="btn btn-primary reserve-btn" onclick="openReservation('Gimnasio Basketball Pro')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Establishment 3 -->
+                <div class="establishment-card" data-sport="tenis" data-rating="4.7" data-price="45">
+                    <div class="establishment-image">
+                        <img src="https://www.usta.com/es/home/improve/tips-and-instruction/national/tennis-scoring-rules/_jcr_content/root/content/image.coreimg.90.1280.jpeg/1601570980292/overview.jpeg" alt="">
+                    </div>
+                    <div class="establishment-info">
+                        <h3>Club de Tenis Elite</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-value">4.7</span>
+                            <span class="reviews">(156 reseñas)</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature"><i class="fas fa-table-tennis"></i> 4 mesas profesionales</span>
+                            <span class="feature"><i class="fas fa-trophy"></i> Torneos regulares</span>
+                            <span class="feature"><i class="fas fa-chalkboard-teacher"></i> Clases disponibles</span>
+                        </div>
+                        <div class="amenities">
+                            <span class="amenity"><i class="fas fa-shower"></i> Duchas</span>
+                            <span class="amenity"><i class="fas fa-parking"></i> Estacionamiento</span>
+                            <span class="amenity"><i class="fas fa-utensils"></i> Snack bar</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">$45/hora</span>
+                            <button class="btn btn-primary reserve-btn" onclick="openReservation('Club de Tenis Elite')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Establishment 4 -->
+                <div class="establishment-card" data-sport="gimnasio" data-rating="4.3" data-price="35">
+                    <div class="establishment-image">
+                        <img src="https://cdn.prod.website-files.com/62e06ed3085755f1e43e995b/632cb9cac1d25a194763498f_TheFitnessFactoryGymFloor02.jpeg" alt="">
+                    </div>
+                    <div class="establishment-info">
+                        <h3>FitZone Gym</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-value">4.3</span>
+                            <span class="reviews">(203 reseñas)</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature"><i class="fas fa-dumbbell"></i> Equipos modernos</span>
+                            <span class="feature"><i class="fas fa-running"></i> Área cardio</span>
+                            <span class="feature"><i class="fas fa-weight-hanging"></i> Pesas libres</span>
+                        </div>
+                        <div class="amenities">
+                            <span class="amenity"><i class="fas fa-shower"></i> Duchas</span>
+                            <span class="amenity"><i class="fas fa-lock"></i> Casilleros</span>
+                            <span class="amenity"><i class="fas fa-user-tie"></i> Entrenador</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">$35/hora</span>
+                            <button class="btn btn-primary reserve-btn" onclick="openReservation('FitZone Gym')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Establishment 5 -->
+                <div class="establishment-card" data-sport="voleibol" data-rating="4.6" data-price="55">
+                    <div class="establishment-image">
+                        <img src="https://beachvolleytour.es/wp-content/uploads/2019/11/Josefir-Instantes-Juego-Viernes-18.jpg" alt="">
+                    </div>
+                    <div class="establishment-info">
+                        <h3>Voleibol Arena</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.6</span>
+                            <span class="reviews">(78 reseñas)</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature"><i class="fas fa-volleyball-ball"></i> Cancha profesional</span>
+                            <span class="feature"><i class="fas fa-users"></i> Hasta 12 personas</span>
+                            <span class="feature"><i class="fas fa-lightbulb"></i> Iluminación LED</span>
+                        </div>
+                        <div class="amenities">
+                            <span class="amenity"><i class="fas fa-shower"></i> Duchas</span>
+                            <span class="amenity"><i class="fas fa-parking"></i> Estacionamiento</span>
+                            <span class="amenity"><i class="fas fa-first-aid"></i> Botiquín</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">$55/hora</span>
+                            <button class="btn btn-primary reserve-btn" onclick="openReservation('Voleibol Arena')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Establishment 6 -->
+                <div class="establishment-card" data-sport="futbol" data-rating="4.2" data-price="70">
+                    <div class="establishment-image">
+                        <img src="https://d26itsb5vlqdeq.cloudfront.net//image/BBBE927E-D853-9E03-736571E953A88935" alt="">
+                    </div>
+                    <div class="establishment-info">
+                        <h3>Complejo Deportivo La Cancha</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-value">4.2</span>
+                            <span class="reviews">(95 reseñas)</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature"><i class="fas fa-futbol"></i> Fútbol 5</span>
+                            <span class="feature"><i class="fas fa-futbol"></i> Fútbol 7</span>
+                            <span class="feature"><i class="fas fa-grass"></i> Césped sintético</span>
+                        </div>
+                        <div class="amenities">
+                            <span class="amenity"><i class="fas fa-shower"></i> Duchas</span>
+                            <span class="amenity"><i class="fas fa-parking"></i> Estacionamiento</span>
+                            <span class="amenity"><i class="fas fa-beer"></i> Bar</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">$70/hora</span>
+                            <button class="btn btn-primary reserve-btn" onclick="openReservation('Complejo Deportivo La Cancha')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Reservar Espacio</h2>
+                <span class="close" onclick="closeReservation()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav" id="prev-month">&lt;</button>
+                        <h3 id="current-month"></h3>
+                        <button class="calendar-nav" id="next-month">&gt;</button>
+                    </div>
+                    <div class="calendar" id="calendar"></div>
+                </div>
+                <div class="time-slots" id="time-slots" style="display: none;">
+                    <h4>Horarios disponibles para <span id="selected-date"></span></h4>
+                    <div class="slots-grid" id="slots-grid"></div>
+                    <div class="reservation-summary" id="reservation-summary" style="display: none;">
+                        <h4>Resumen de reserva</h4>
+                        <div class="summary-details" id="summary-details"></div>
+                        <button class="btn btn-primary" onclick="confirmReservation()">Confirmar Reserva</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>SportBooking</span>
+                    </div>
+                    <p>Tu plataforma de confianza para reservar espacios deportivos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="establishments.html">Establecimientos</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> info@sportbooking.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SportBooking. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
