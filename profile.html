@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - SportSpace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-dumbbell"></i>
+                <span>SportBooking</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="establishments.html" class="nav-link">Establecimientos</a></li>
+                <li><a href="profile.html" class="nav-link active">Mi Perfil</a></li>
+                <li>
+                    <div class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mi Perfil</h1>
+            <p>Administra tu información y revisa tu actividad</p>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <main class="profile-main">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234CAF50'/%3E%3Ctext x='50' y='60' text-anchor='middle' fill='white' font-size='30' font-family='Arial'%3EJM%3C/text%3E%3C/svg%3E" alt="Avatar">
+                        </div>
+                        <h3>Juan Martínez</h3>
+                        <p>Miembro desde Enero 2024</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Reservas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$1,250</span>
+                                <span class="stat-label">Total Gastado</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <nav class="profile-nav">
+                        <a href="#" class="profile-nav-link active" data-section="personal">Información Personal</a>
+                        <a href="#" class="profile-nav-link" data-section="reservations">Mis Reservas</a>
+                        <a href="#" class="profile-nav-link" data-section="pending">Reservas Pendientes</a>
+                        <a href="#" class="profile-nav-link" data-section="history">Historial</a>
+                        <a href="#" class="profile-nav-link" data-section="settings">Configuración</a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="profile-content">
+                    <!-- Personal Information Section -->
+                    <section id="personal" class="profile-section active">
+                        <div class="section-header">
+                            <h2>Información Personal</h2>
+                            <button class="btn btn-secondary">Editar</button>
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Nombre Completo</label>
+                                <span>Juan Martínez García</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Email</label>
+                                <span>juan.martinez@email.com</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Teléfono</label>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Fecha de Nacimiento</label>
+                                <span>15 de Marzo, 1990</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Dirección</label>
+                                <span>Calle Principal 123, Ciudad, País</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Deportes Favoritos</label>
+                                <span>Fútbol, Básquet, Tenis</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Current Reservations Section -->
+                    <section id="reservations" class="profile-section">
+                        <div class="section-header">
+                            <h2>Mis Reservas Activas</h2>
+                            <span class="badge">2 activas</span>
+                        </div>
+                        <div class="reservations-list">
+                            <div class="reservation-card">
+                                <div class="reservation-info">
+                                    <h4>Cancha de Fútbol Premium</h4>
+                                    <p>Centro Deportivo Elite</p>
+                                    <div class="reservation-details">
+                                        <span><i class="fas fa-calendar"></i> 25 de Diciembre, 2024</span>
+                                        <span><i class="fas fa-clock"></i> 18:00 - 19:00</span>
+                                        <span><i class="fas fa-dollar-sign"></i> $60</span>
+                                    </div>
+                                </div>
+                                <div class="reservation-actions">
+                                    <span class="status confirmed">Confirmada</span>
+                                    <button class="btn btn-secondary btn-sm">Modificar</button>
+                                    <button class="btn btn-danger btn-sm">Cancelar</button>
+                                </div>
+                            </div>
+                            
+                            <div class="reservation-card">
+                                <div class="reservation-info">
+                                    <h4>Cancha de Tenis</h4>
+                                    <p>Club Deportivo Central</p>
+                                    <div class="reservation-details">
+                                        <span><i class="fas fa-calendar"></i> 28 de Diciembre, 2024</span>
+                                        <span><i class="fas fa-clock"></i> 10:00 - 11:00</span>
+                                        <span><i class="fas fa-dollar-sign"></i> $45</span>
+                                    </div>
+                                </div>
+                                <div class="reservation-actions">
+                                    <span class="status confirmed">Confirmada</span>
+                                    <button class="btn btn-secondary btn-sm">Modificar</button>
+                                    <button class="btn btn-danger btn-sm">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Pending Reservations Section -->
+                    <section id="pending" class="profile-section">
+                        <div class="section-header">
+                            <h2>Reservas Pendientes</h2>
+                            <span class="badge pending">3 pendientes</span>
+                        </div>
+                        <div class="reservations-list">
+                            <div class="reservation-card pending">
+                                <div class="reservation-info">
+                                    <h4>Cancha de Básquet</h4>
+                                    <p>Complejo Deportivo Norte</p>
+                                    <div class="reservation-details">
+                                        <span><i class="fas fa-calendar"></i> 30 de Diciembre, 2024</span>
+                                        <span><i class="fas fa-clock"></i> 16:00 - 17:00</span>
+                                        <span><i class="fas fa-dollar-sign"></i> $50</span>
+                                    </div>
+                                </div>
+                                <div class="reservation-actions">
+                                    <span class="status pending">Pendiente de Pago</span>
+                                    <button class="btn btn-primary btn-sm">Pagar Ahora</button>
+                                </div>
+                            </div>
+                            
+                            <div class="reservation-card pending">
+                                <div class="reservation-info">
+                                    <h4>Gimnasio Premium</h4>
+                                    <p>FitCenter Pro</p>
+                                    <div class="reservation-details">
+                                        <span><i class="fas fa-calendar"></i> 2 de Enero, 2025</span>
+                                        <span><i class="fas fa-clock"></i> 07:00 - 08:00</span>
+                                        <span><i class="fas fa-dollar-sign"></i> $35</span>
+                                    </div>
+                                </div>
+                                <div class="reservation-actions">
+                                    <span class="status pending">Pendiente de Confirmación</span>
+                                    <button class="btn btn-secondary btn-sm">Ver Detalles</button>
+                                </div>
+                            </div>
+                            
+                            <div class="reservation-card pending">
+                                <div class="reservation-info">
+                                    <h4>Cancha de Voleibol</h4>
+                                    <p>Centro Recreativo Sur</p>
+                                    <div class="reservation-details">
+                                        <span><i class="fas fa-calendar"></i> 5 de Enero, 2025</span>
+                                        <span><i class="fas fa-clock"></i> 19:00 - 20:00</span>
+                                        <span><i class="fas fa-dollar-sign"></i> $55</span>
+                                    </div>
+                                </div>
+                                <div class="reservation-actions">
+                                    <span class="status pending">Pendiente de Pago</span>
+                                    <button class="btn btn-primary btn-sm">Pagar Ahora</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- History Section -->
+                    <section id="history" class="profile-section">
+                        <div class="section-header">
+                            <h2>Historial de Reservas</h2>
+                            <div class="history-summary">
+                                <div class="summary-item">
+                                    <span class="summary-number">24</span>
+                                    <span class="summary-label">Total Reservas</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-number">$1,250</span>
+                                    <span class="summary-label">Total Gastado</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-number">$52</span>
+                                    <span class="summary-label">Promedio por Reserva</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="history-filters">
+                            <select class="filter-select">
+                                <option>Todos los deportes</option>
+                                <option>Fútbol</option>
+                                <option>Básquet</option>
+                                <option>Tenis</option>
+                                <option>Voleibol</option>
+                                <option>Gimnasio</option>
+                            </select>
+                            <select class="filter-select">
+                                <option>Últimos 3 meses</option>
+                                <option>Último mes</option>
+                                <option>Últimos 6 meses</option>
+                                <option>Todo el tiempo</option>
+                            </select>
+                        </div>
+                        
+                        <div class="history-list">
+                            <div class="history-item">
+                                <div class="history-date">20 Dic 2024</div>
+                                <div class="history-details">
+                                    <h4>Cancha de Fútbol</h4>
+                                    <p>Centro Deportivo Elite</p>
+                                    <span class="history-time">16:00 - 17:00</span>
+                                </div>
+                                <div class="history-amount">$60</div>
+                                <div class="history-status completed">Completada</div>
+                            </div>
+                            
+                            <div class="history-item">
+                                <div class="history-date">18 Dic 2024</div>
+                                <div class="history-details">
+                                    <h4>Cancha de Tenis</h4>
+                                    <p>Club Deportivo Central</p>
+                                    <span class="history-time">14:00 - 15:00</span>
+                                </div>
+                                <div class="history-amount">$45</div>
+                                <div class="history-status completed">Completada</div>
+                            </div>
+                            
+                            <div class="history-item">
+                                <div class="history-date">15 Dic 2024</div>
+                                <div class="history-details">
+                                    <h4>Gimnasio Premium</h4>
+                                    <p>FitCenter Pro</p>
+                                    <span class="history-time">08:00 - 09:00</span>
+                                </div>
+                                <div class="history-amount">$35</div>
+                                <div class="history-status completed">Completada</div>
+                            </div>
+                            
+                            <div class="history-item">
+                                <div class="history-date">12 Dic 2024</div>
+                                <div class="history-details">
+                                    <h4>Cancha de Básquet</h4>
+                                    <p>Complejo Deportivo Norte</p>
+                                    <span class="history-time">18:00 - 19:00</span>
+                                </div>
+                                <div class="history-amount">$50</div>
+                                <div class="history-status cancelled">Cancelada</div>
+                            </div>
+                        </div>
+                        
+                        <div class="load-more">
+                            <button class="btn btn-secondary">Cargar Más</button>
+                        </div>
+                    </section>
+
+                    <!-- Settings Section -->
+                    <section id="settings" class="profile-section">
+                        <div class="section-header">
+                            <h2>Configuración</h2>
+                        </div>
+                        <div class="settings-grid">
+                            <div class="setting-item">
+                                <h4>Notificaciones</h4>
+                                <div class="setting-options">
+                                    <label class="toggle">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                        Recordatorios de reservas
+                                    </label>
+                                    <label class="toggle">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                        Ofertas y promociones
+                                    </label>
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        Newsletter semanal
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <h4>Privacidad</h4>
+                                <div class="setting-options">
+                                    <label class="toggle">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                        Perfil público
+                                    </label>
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        Mostrar historial de actividad
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <h4>Cuenta</h4>
+                                <div class="setting-actions">
+                                    <button class="btn btn-secondary">Cambiar Contraseña</button>
+                                    <button class="btn btn-secondary">Descargar Datos</button>
+                                    <button class="btn btn-danger">Eliminar Cuenta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SportSpace</h4>
+                    <p>Tu plataforma de confianza para reservar espacios deportivos de calidad.</p>
+                    <div class="footer-brand">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>Deporte • Salud • Comunidad</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="establishments.html">Establecimientos</a></li>
+                        <li><a href="profile.html">Mi Perfil</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> info@sportspace.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SportSpace. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Profile page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileNavLinks = document.querySelectorAll('.profile-nav-link');
+            const profileSections = document.querySelectorAll('.profile-section');
+            
+            profileNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links and sections
+                    profileNavLinks.forEach(l => l.classList.remove('active'));
+                    profileSections.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show corresponding section
+                    const sectionId = this.getAttribute('data-section');
+                    document.getElementById(sectionId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
